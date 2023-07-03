@@ -1,4 +1,34 @@
 {% extends "cv_chatgpt/base.html" %}
 {% block home-page-content %}
+<div class="container">
+  <h2>Your Info:</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="profession">Profession:</label>
+      <input type="text" class="form-control" id="profession" placeholder="Enter your profession" required>
+    </div>
+    <div class="form-group">
+      <label for="designation">Designation:</label>
+      <input type="text" class="form-control" id="designation" placeholder="Enter your designation" required>
+    </div>
+    <div class="form-group">
+      <label for="summary">Summary of Current Job:</label>
+      <textarea class="form-control" id="summary" rows="4" placeholder="Enter a summary of your current job" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="position">Position Applying For:</label>
+      <input type="text" class="form-control" id="position" placeholder="Enter the position you are applying for" required>
+    </div>
+    <div class="form-group">
+      <label for="jobDescription">Job Description of Position:</label>
+      <textarea class="form-control" id="jobDescription" rows="4" placeholder="Enter the job description of the position" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 
 {% endblock home-page-content %}
