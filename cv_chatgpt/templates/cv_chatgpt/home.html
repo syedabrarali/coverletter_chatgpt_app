@@ -1,7 +1,7 @@
 {% extends "cv_chatgpt/base.html" %}
 {% block home-page-content %}
 <div class="container">
-  <h2>Your Info:</h2>
+  <h2 style="padding-top: 30px;">Your Info:</h2>
   <form>
     <div class="form-group">
       <label for="name">Name:</label>
@@ -18,6 +18,10 @@
     <div class="form-group">
       <label for="summary">Summary of Current Job:</label>
       <textarea class="form-control" id="summary" rows="4" placeholder="Enter a summary of your current job" required></textarea>
+    </div>
+    <div class=""form-group">
+      <label for="yearsofexp">Years of Experience:</label>
+      <input type="number" class="form-control" id="yearsofexp" min="0" required><br>
     </div>
     <div class="form-group">
       <label for="position">Position Applying For:</label>
